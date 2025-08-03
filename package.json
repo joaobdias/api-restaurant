@@ -1,0 +1,17 @@
+{
+  "name": "api-restaurant",
+  "version": "1.0.0",
+  "description": "A simple API for managing restaurant data",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "joaobdias",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  }
+}
