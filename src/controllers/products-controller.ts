@@ -1,6 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 
-class ProductController {
+// this script defines what really happens when the user try to acess the endpoint
+
+class ProductController { // method which returns the index (all values related to product controller) in Product routes
     async index ( request: Request, response: Response, next: NextFunction){
         try {
             
@@ -9,6 +11,7 @@ class ProductController {
             next(error)
         }
     }
+
 }
 
 export { ProductController }
