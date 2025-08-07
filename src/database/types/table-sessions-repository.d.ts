@@ -1,0 +1,8 @@
+// creating a file type
+
+type TablesSessionsRepository = {
+    id: number,
+    table_id: number,
+    opened_at: number,
+    closed_at: number
+}

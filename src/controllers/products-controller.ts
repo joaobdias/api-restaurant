@@ -60,7 +60,7 @@ class ProductController { // method which returns the index (all values related 
             .where({id})
             .first() // reduce options
 
-            if (!product) {
+            if (!product) { // go directly to catch with this
                 throw new AppError("Product not found")
             }
 
@@ -71,7 +71,8 @@ class ProductController { // method which returns the index (all values related 
             return response.json()
 
         } catch (error) {
-            next(error)
+
+            next(error) // go to server.ts -> error handling with specific error
         }
     }
 
